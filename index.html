@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>demo</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div id="box">
+        <header>
+            <div class="header-logo za-logo">LOGO</div>
+            <div class="header-logo hy-logo">LOGO</div>
+        </header>
+        <div class="main">
+            <div class="left">
+                <h4>请先上传需要验证的文件</h4>
+                <div class="file-sec">
+                    <label class="label-for" for="file">上传文件</label>
+                    <form>
+                        <input type="file" id="file" accept="application/pdf" multiple style="position:absolute;clip:rect(0 0 0 0);">
+                    </form>
+                </div>
+            </div>
+            <div class="right">
+                <p>共  <span class="file-count">0</span>  分</p>
+                <ul class="upload-box">
+                    <!-- <li>
+                        <div class="upload-img">缩略图</div>
+                        <div class="upload-detail">
+                            <div class="upload-file-sec">
+                                <p class="upload-file-name">诉讼.pdf</p>
+                                <p class="del">X</p>
+                            </div>
+                            <progress 
+                            class="processbar" 
+                            max="100" 
+                            value="5"></progress>
+                        </div>
+                    </li> -->
+                </ul>
+            </div>
+        </div>
+        <div class="btn-wapper">
+            <div class="btn submit">提交验证</div>
+        </div>
+
+        <div class="verify-pan">
+            <div class="verify-top">
+                <h4>验证结果</h4>
+                <p>共  <span class="file-count">0</span>  分</p>
+            </div>
+            <table class="verify-table">
+                <thead>
+                    <th>文件</th>
+                    <th>订单号</th>
+                    <th>保单号</th>
+                    <th data-type="success">验证结果</th>
+                </thead>
+                <tbody>
+                    <!-- <tr>
+                        <td>诉讼</td>
+                        <td>89898989898</td>
+                        <td>89898989898</td>
+                        <td data-type="success">验证成功</td>
+                    </tr>
+                    <tr>
+                        <td>诉讼</td>
+                        <td>89898989898</td>
+                        <td>89898989898</td>
+                        <td data-type="fail">验证成功</td>
+                    </tr> -->
+                </tbody>
+            </table>
+        </div>
+        
+    </div>
+    <script src="./index.js"></script>
+</body>
+</html>
